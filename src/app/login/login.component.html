@@ -1,0 +1,29 @@
+<div class="login-box">
+  <div class="login-logo">
+    <a href="../../index2.html"><b>Tesis </b>II</a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="login-box-body">
+    <p class="login-box-msg">Iniciar sesión</p>
+
+    <form>
+      <div class="form-group has-feedback">
+        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="usuario"  placeholder="Email">
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="password" id="password" name="password" [(ngModel)]="clave" class="form-control" placeholder="Password">
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <div class="row">
+
+        <div class="col-xs-12">
+          <button type="button" class="btn btn-primary btn-block btn-flat" (click)="iniciarSesion()">Sign In</button>
+        </div>
+        <!-- /.col -->
+      </div>
+    </form>
+
+  </div>
+  <!-- /.login-box-body -->
+</div>
